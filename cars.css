@@ -1,0 +1,111 @@
+@media only screen {
+html{
+    hyphens: manual;
+}
+#home{
+    text-align: center;
+}
+#home .row{
+    justify-content: center;
+}
+#home .row .title{
+    font-size: 35px;
+}
+#home .decorator{
+    position: relative;
+    margin: auto;
+    height: 3px;
+    width: 300px;
+    background-color: #CC9746;
+}
+.cars .decorator-small{
+    position: relative;
+    margin: auto;
+    height: 2px;
+    width: 200px;
+    background-color: #CC9746;
+}
+.cars{
+    text-align: center;
+
+}
+.cars .row .title{
+    font-size: 30px;
+}
+.cars .row .under-title{
+    position: relative;
+    font-size: 20px;
+    opacity: 50%;
+}
+.cars .row .container{
+
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: 120px;
+    margin-left: 120px;
+    text-align: center;
+    justify-content: center;
+
+}
+.cars .row .container .box{
+    width: 485px;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+
+
+}
+.cars .row .container .box .content{
+
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+
+}
+.cars .row .container .box .content .table{
+
+    font-size: 15px;
+}
+.cars .row .container .box .content .table td{
+    padding-top: 15px;
+    text-align: left;
+    line-height: 30px;
+}
+.cars .row .container .box .content .title{
+    font-size: 20px;
+    font-weight: 550;
+    transition: 0.2s;
+}
+.cars .row .container p{
+
+    font-size: 17px;
+}
+
+}
+img{
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+.button{
+    background-color:  #CC9746;
+    width: 115%;
+    margin: -30px;
+    margin-top: 30px;
+    line-height: 50px;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+
+}
+.button:hover{
+    font-size: 21px;
+    text-decoration: underline;
+
+}
+.cars{
+    border-bottom: #CC9746 solid 3px;
+}

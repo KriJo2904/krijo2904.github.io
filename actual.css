@@ -1,0 +1,19 @@
+#home{
+    text-align: center;
+}
+#home .row{
+    justify-content: center;
+}
+#home .row .title{
+    font-size: 35px;
+}
+#home .decorator{
+    position: relative;
+    margin: auto;
+    height: 3px;
+    width: 300px;
+    background-color: #CC9746;
+}
+.boxer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

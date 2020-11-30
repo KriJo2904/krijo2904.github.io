@@ -1,0 +1,16 @@
+#home{
+    text-align: center;
+}
+#home .row{
+    justify-content: center;
+}
+#home .row .title{
+    font-size: 35px;
+}
+#home .decorator{
+    position: relative;
+    margin: auto;
+    height: 3px;
+    width: 300px;
+    background-color: #CC9746;
+}
