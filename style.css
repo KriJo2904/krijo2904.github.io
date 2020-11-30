@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+@media only screen {
+
+html{
+    scroll-behavior: smooth;
+    hyphens: manual;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    color: #404040;
+    font-weight: 300;
+    overflow-x: hidden;
+
+
+}
+header{
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: #181612;
+    border-bottom:solid #CC9746 3px;
+    z-index: 99999999;
+}
+header .header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 100px;
+    font-size: 18px;
+
+
+
+}
+header .navbar-center ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .navbar-center ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+
+}
+header .lang ul li{
+    margin-left: 5px;
+
+}
+header .navbar-center ul li a::before{
+    content:'';
+    height: 5px;
+    background-color: #CC9746;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 30px;
+    transition: all .5s ease;
+}
+header .navbar-center ul li a:hover:before{
+    width: 100%;
+    left: 0;
+
+}
+
+header .navbar-center ul li a#active:before{
+    width: 100%;
+    left: 0;
+    transition: all .5s ease;
+} 
+}
+.row{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar-left .logo{
+    margin-left: 100px;
+    height: 60px;
+
+}
+.main{
+    width: 100%;
+}
+.row{
+    margin: 100px;
+}
+
+#gallery .row{
+    height: 500px;
+}
+#gallery .row .container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+#gallery .row .container a{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    transition: 0.5s;
+    width: 120px;
+    min-height: 120px;
+    max-height: auto;
+}
+#gallery .row .container a p{
+    opacity: 1;
+    color: #F8F8F5;
+    font-weight: 600;
+    font-size: 120%;
+    position: relative;
+    top: -50%;
+    transition: 0.5s;
+
+}
+#gallery .row .container a:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#gallery .row .container a:hover p{
+    font-size: 130%;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+#gallery{
+    text-align: center;
+
+}
+#gallery .row .title{
+    font-size: 30px;
+}
+#gallery .row .title{
+    font-size: 30px;
+}
+#gallery .row .under-title{
+    font-size: 20px;
+    opacity: 50%;
+}
+#gallery .row .container a .img{
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+#about{
+    background: #F8F8F5;
+
+    text-align: center;
+    border-bottom:solid #CC9746 3px;
+}
+#home .main-box{
+    height: 500px;
+    hyphens: manual;
+    background-image: url(/img/lambo2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom:solid #CC9746 3px;
+    filter: drop-shadow(50%);
+}
+#about .main-box .title{
+    font-size: 30px;
+    margin-top: 50px;
+}
+#about .main-box .content{
+
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#about .content{
+    height: 30vh;
+
+}
+#offer{
+    text-align: center;
+
+}
+#offer .row .title{
+    font-size: 30px;
+}
+#offer .row .title{
+    font-size: 30px;
+}
+#offer .row .under-title{
+    font-size: 20px;
+    opacity: 50%;
+}
+#offer .row .container{
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+#offer .row .container .box{
+
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+#offer .row .container .box .content{
+
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+
+}
+#offer .row .container .box .content .title{
+    font-size: 20px;
+    font-weight: 550;
+    transition: 0.2s;
+}
+#offer .row .container p{
+
+    font-size: 17px;
+}
+
+.title{
+    margin: 30px;
+}
+
+
+
+footer .info{
+
+    height: 500px;
+    background: #181612;
+    color: #ffffff;
+    line-height: 500px;
+    border-bottom:solid #CC9746 3px;
+    border-top:solid #CC9746 3px;
+}
+footer .contact{
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    font-weight: 50;
+    font-size: 18px;
+    padding: 140px 60px;
+}
+footer .info-column{
+    display: table-cell;
+    line-height: 40px;
+}
+footer .img{
+    vertical-align: middle;
+    text-align: left;
+}
+footer .logo{
+    height: 80px;
+}
+.map {
+
+}
+.map iframe{
+    width: 100%;
+
+}
+footer .copyright{
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media only screen and (max-width: 1000px){
+    #home .main-box{
+        text-align: center;
+        height: 500px;
+        background-image: url(/img/lambo3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (max-width: 1400px){
+    #offer .row .container .box{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    #offer .row .container{
+
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+@media (max-width: 900px){
+    #offer .row .container .box{
+        flex: 0 0 100%;
+        max-width: 200%;
+    }
+    #offer .row{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #offer .row .container{
+
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #about .main-box .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #gallery .row{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.box:hover .content{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+
+}
+.box:hover .title{
+    color: #CC9746;
+    transition: 0.5s;
+}
+::selection {
+    background-color: #fab700;
+    color: #fff;
+}
