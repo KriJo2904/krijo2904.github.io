@@ -3,6 +3,7 @@
 }
 #home .row{
     justify-content: center;
+    color: #ffffff;
 }
 #home .row .title{
     font-size: 35px;
@@ -14,6 +15,61 @@
     width: 300px;
     background-color: #CC9746;
 }
-.boxer{
+
+.container{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #373736;
+    color: #ffffff;
+}
+.actual .row .container .boxer .imagetDetail{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+.actual .row .container .boxer .imageDetail img{
+    vertical-align: top;
+    position: relative;
+    float: left;
+    margin: 0px 15px 0px 0px;
+    height: auto;
+    width: 100%;
+}
+.actual .row .container .boxer .contentDetail{
+    width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+.actual .boxer{
+    display: table;
+    width: 100%;
+}
+.actual .row .title{
+    font-size: 35px;
+}
+.bold{
+    font-weight: 700;
+}
+.actual .content{
+    margin: 40px;
+}
+.actual .content p{
+    margin-bottom: 20px;
+}
+@media (max-width: 900px){
+    .actual .row{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .actual .boxer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .actual .content{
+        margin: 25px;
+    }
+    .actual .row .container .boxer .contentDetail{
+        width: 100%;
+
+    }
 }

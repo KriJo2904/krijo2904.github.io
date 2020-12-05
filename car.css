@@ -1,0 +1,81 @@
+.row{
+    justify-content: center;
+    text-align: center;
+
+}
+.row .title{
+    font-size: 35px;
+    color: #ffffff;
+}
+.decorator{
+    position: relative;
+    margin: auto;
+    height: 3px;
+    width: 300px;
+    background-color: #CC9746;
+}
+.container{
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+.prize .row{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.prize .content table{
+    width: 100%;
+
+}
+.prize .content table tr{
+    height: 100px;
+    text-align: center;
+}
+.prize .content table td:hover{
+    background-color: #CC9746;
+    transition: 0.2s;
+}
+.prize .content table td{
+    transition: 0.2s;
+    width: 14.3%;
+}
+.prize .content .upper{
+    height: 70px;
+    font-size: 17px;
+}
+.prize .content .down{
+    font-weight: 300;
+    font-size: 19px;
+}
+.prize .content table tr:nth-child(odd){
+    background-color: #494949;
+    color: #ffffff;
+}
+.prize .content table tr:nth-child(even){
+    background-color: #373736;
+    color: #ffffff;
+}
+
+.info .content table{
+    width: 100%;
+}
+.info .content table tr{
+    height: 70px;
+    text-align: center;
+}
+.info .content table td{
+    width:50%;
+}
+.info .content table tr:hover td{
+    background-color: #1a1917;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.info .content table tr:nth-child(odd){
+    background-color: #494949;
+    color: #ffffff;
+}
+.info .content table tr:nth-child(even){
+    background-color: #373736;
+    color: #ffffff;
+}

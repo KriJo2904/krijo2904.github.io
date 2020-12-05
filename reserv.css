@@ -1,9 +1,9 @@
 #home{
     text-align: center;
-    color: #ffffff;
 }
 #home .row{
     justify-content: center;
+    color: #ffffff;
 }
 #home .row .title{
     font-size: 35px;
@@ -15,57 +15,58 @@
     width: 300px;
     background-color: #CC9746;
 }
-.container{
+.reserve .container{
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: 120px;
+    margin-left: 120px;
+    justify-content: center;
+}
+.reserve .title{
+    padding-top: 20px;
+    color: #ffffff;
+}
+.reserve .row{
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #373736;
     color: #ffffff;
-    width: 100%;
 }
-.contact .row .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.reserve .container{
+    text-align: left;
+    margin-top: 30px;
 }
-.contact .row .container .box{
-    flex:33.33333%;
-    padding-left: 100px;
-    padding-right: 50px;
-    padding-top: 50px;
-    margin-bottom: 50px;
+.reserve .decorator{
+    position: relative;
+    margin: auto;
+    height: 3px;
+    width: 300px;
+    background-color: #CC9746;
+}
+.reserve .row .container .box{
+
+    margin-bottom: 30px;
+    width: 600px;
     float: left;
+    padding-right: 15px;
+    padding-left: 15px;
 
 }
-.contact .row .container .box p{
-    margin-top: 20px;
-
-}
-.contact .row .container .box a{
-    color: #2172b4;
-    text-decoration: none;
-
-}
-.contact .row .container .box span{
-    color: #CC9746;
-
-}
-.contact .row .container .box input{
-    
+.reserve .row .container .box input {
     font-size: 18px;
     padding-left: 10px;
 }
-.contact .row .container textarea {
+.reserve .row .container textarea {
     font-size: 18px;
     padding-left: 10px;
 }
-.contact .row .container select {
+.reserve .row .container select {
     font-size: 18px;
     padding-left: 10px;
-}
-.contact .row .container .box div{
-    padding-top: 30px;
 }
 
-.contact .row .container .box.wider{
+
+.reserve .row .container .box.wider{
     vertical-align: top;
     width: 100%;
     float: none;
@@ -73,7 +74,7 @@
     padding-left: 15px;
 
 }
-.contact .row .container .box .msg{
+.reserve .row .container .box .msg{
     height: 200px;
 
 }
@@ -81,7 +82,7 @@
     cursor: pointer;
     float: none;
 }
-.contact .row .container .form{
+.reserve .row .container .form{
     width: 100%;
     padding: 12px 0;
     box-sizing: border-box;
@@ -98,6 +99,7 @@
     height: 50px;
     border: none;
     margin: 20px;
+    font-size: 20px;
 }
 .submit{
     text-align: center;
@@ -105,4 +107,3 @@
 textarea {
     resize: none;
 }
-

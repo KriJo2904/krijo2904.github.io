@@ -4,64 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" >
-    <title>Wypożyczalnia luksusowych samochodów - Carivia</title>
+    <link rel="icon" href="icons/carvia_icon.ico">
+    <title>Carivia - Wypożyczalnia luksusowych samochodów</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="navbar-left">
-                <img class="logo" src="/img/carvia_logo_hazel.png" href="/"/>
+                <img class="logo" src="img/carvia_logo_hazel.png" href="/"/>
             </div>
             <div class="navbar-center menu">
                 <ul>
                     <li>|</li>
                     <li><a class="link" id="active" href="/" a>O Nas</a></li>
                     <li>|</li>
-                    <li><a class="link" href="/aktualnosci.html">Aktualności</a></li>
+                    <li><a class="link" href="offer.html" a>Oferta</a></li>
                     <li>|</li>
-                    <li><a class="link" href="/samochody.html">Samochody</a></li>
+                    <li><a class="link"  href="samochody.html">Flota</a></li>
                     <li>|</li>
-                    <li><a class="link" href="/zarezerwuj.html">Zarezerwuj</a></li>
+                    <li><a class="link" href="aktualnosci.html">Aktualności</a></li>
                     <li>|</li>
-                    <li><a class="link" href="/kontakt.html">Kontakt</a></li>
+                    <li><a class="link"  href="zarezerwuj.html">Zarezerwuj</a></li>
+                    <li>|</li>
+                    <li><a class="link"  href="kontakt.html">Kontakt</a></li>
                     <li>|</li>
                 </ul>
             </div>
             <div class="navbar-center lang">
                 <ul>
-                    <li><a class="link" href="/">PL</a></li>
+                    <li><a class="link" id="active" href="/">PL</a></li>
                     <li>|</li>
-                    <li><a class="link" href="/en/">EN</a></li>
+                    <li><a class="link" href="en/">EN</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <section id="home">
         <div class="main-box">
-
+            <div class="desc">
+                <div class="title">
+                    Miejsce, w którym pasja spotyka się z luksusem
+                </div>
+                <div class="under-title">
+                    Wypożyczalnia samochodów klasy premium
+                </div>
+            </div>
         </div>
     </section>
+    <section id="cars">
+        <div class="row">
+            <div class="container">
+                <div class="box">
+                    <img class="car_logo"src="img/logos/lambo.png"/>
+                </div>
+                <div class="box">
+    
+                    <img class="car_logo"src="img/logos/audi.png"/>
+                </div>
+                <div class="box">
+                    <img class="car_logo"src="img/logos/merc.png"/>
+                </div>
+                <div class="box">
+                    <img class="car_logo"src="img/logos/chew.png"/>
+                </div>
+                <div class="box">
+                    <img class="car_logo"src="img/logos/bmw.png"/>
+                </div>
+                <div class="box">
+                    <img class="car_logo"src="img/logos/porsche.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
     <section id="gallery">
         <div class="row">
             <div class="title">
-                <h1>Wypożyczalnia samochodów sportowych i luksusowych</h1>
+                <h1>Kategorie samochodów</h1>
+            </div>
+            <div class="decorator">
             </div>
             <div class="under-title">
-                Nawet tym, którzy są eko-friendly
+                Najlepsza klasa w najlepszej cenie.
             </div>
             <div class="container">
-                <a href="/samochody.html#luks">
-                    <img class="img img1"src="/img/rr.jpeg"/>
-                    <p>Luksusowe</p>
-                </a>
-                <a href="/samochody.html#sport">
-                    <img class="img img2" src="/img/bmw.jpg"/>
-                    <p>Sportowe</p>
-                </a>
-                <a href="/samochody.html#weeding">
-                    <img class="img img3"src="/img/wedding.jpg"/>
-                    <p>Weselne</p>
-                </a>
+                <div class="box">
+                    <a href="samochody.html#luks">
+                        <img class="img img1"src="img/rr.jpeg"/>
+                        <button class="button-box">Luksusowe</button>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="samochody.html#sport">
+                        <img class="img img2" src="img/bmw.jpg"/>
+                        <button class="button-box">Sportowe</button>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="samochody.html#weeding">
+                        <img class="img img3"src="img/wedding.jpg"/>
+                        <button class="button-box">Ślubne</button>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -70,6 +121,8 @@
         <div class="row">
             <div class="title">
                 <h1>Co oferujemy naszym klientom</h1>
+            </div>
+            <div class="decorator">
             </div>
             <div class="under-title">
                 Nawet tym, którzy są eko-friendly
@@ -155,17 +208,26 @@
         <div class="main-box">
             <div class="row">
                 <div class="title">
-                    <h1>O Nas</h1>
+                    <h1>O nas</h1>
+                </div>
+                <div class="decorator">
+                </div>
+                <div class="under-title">
+                    Firma tworzona z pasji
                 </div>
             </div>
             <div class="row">
                 <div class="content">
-                    Będąc pasjonatami wygodnej i szybkiej jazdy, postanowiliśmy stworzyć wyjątkową wypożyczalnię samochodów klasy premium.
+                    <p>Będąc pasjonatami wygodnej i szybkiej jazdy, postanowiliśmy stworzyć wyjątkową wypożyczalnię samochodów klasy premium.
                     W naszej ofercie znajdą się nie tylko luksusowe limuzyny, ale także samochody, które dostarczają wiele radości i przyjemności.
-                    Szeroka gama znanych marek daje duże pole do wyboru samochodu spełniającego twoje oczekiwania.</br>
+                    Szeroka gama znanych marek daje duże pole do wyboru samochodu spełniającego twoje oczekiwania.</p></br>
 
-                    Rozumiemy, że się spieszysz i nie masz czasu na drobiazgi. My też nie jesteśmy drobiazgowi. Nie pobieramy opłat za niewielkie spóźnienie i mycie auta. 
-                    Obsługujemy naszych klientów w taki sposób, w jaki sami chcielibyśmy być.
+                    <p>Rozumiemy, że się spieszysz i nie masz czasu na drobiazgi. My też nie jesteśmy drobiazgowi. Nie pobieramy opłat za niewielkie spóźnienie i mycie auta. 
+                    Obsługujemy naszych klientów w taki sposób, w jaki sami chcielibyśmy być.</p></br>
+                    <p>Posiadamy wyjątkowo starannie wyselekcjonowany asortyment aut sportowych i luksusowych. 
+                    Oznacza to, że wynajem samochodów w Carvia pozwoli Ci zrealizować marzenia o podróży eleganckim Mercedesem, super szybkim Porsche czy legendarnym Range Roverem. Nie uznajemy kompromisów, dlatego klientom oferujemy wyłącznie pojazdy klasy premium, będące symbolem ekstrawagancji,
+                    a zarazem doskonałego gustu. Skorzystanie z oferty naszej wypożyczalni samochodów to również dobry pomysł, kiedy planujesz zakup własnego auta z górnej półki. Zanim zdecydujesz się na taką inwestycję, wynajem aut sportowych i luksusowych pozwoli Ci przetestować konkretne modele 
+                    w trasie i porównać je między sobą. Rezerwacji możesz dokonać wygodnie online, a jeśli masz jakiekolwiek pytania na temat samochodów premium lub chcesz poradzić się w kwestii wyboru, zapraszamy do kontaktu telefonicznego.</p></br>
                 </div>
             </div>
         </div>
@@ -174,18 +236,18 @@
         <div class="info">
             <div class="contact">
                 <div class="info-column img">
-                        <img class="logo" src="/img/carvia_logo_hazel.png" href="/"/>
+                        <img class="logo" src="img/carvia_logo_hazel.png" href="/"/>
                 </div>
                 <div class="info-column">
                         <p><strong>Dane kontaktowe</strong></p>
-                        <p>+48 435243523452435</p>
-                        <p>+48 2341q2431243</p>
+                        <p>+48 435 243 523</p>
+                        <p>+48 234 431 243</p>
                         <p>carvia@wynajem.pl</p>
                 </div>
                 <div class="info-column">
                         <p><strong>Dane adresowe</strong></p>
-                        <p>+48 435243523452435</p>
-                        <p>+48 2341q2431243</p>
+                        <p>ul. Kościuszki 120</p>
+                        <p>46-070 Opole</p>
                 </div>
                 <div class="info-column">
                         <p><strong>Godziny otwarcia</strong></p>

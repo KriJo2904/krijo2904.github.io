@@ -1,7 +1,16 @@
 *{
     box-sizing: border-box;
     margin:0;
+    scrollbar-width: thin;
 }
+  *::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 20px;
+    background: #1A1A1A;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color:  #ffffff;
+  }
 @media only screen {
 
 html{
@@ -10,15 +19,14 @@ html{
 
 }
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin: 0px;
     padding: 0px;
     color: #404040;
     font-weight: 300;
     overflow-x: hidden;
-
-
+    background-color: #1A1A1A;
 }
 header{
     height: 100px;
@@ -36,10 +44,8 @@ header .header{
     margin-left: 80px;
     margin-right: 80px;
     height: 100px;
-    font-size: 18px;
-
-
-
+    font-size: 16px;
+    font-weight: 400;
 }
 header .navbar-center ul{
     list-style: none;
@@ -50,6 +56,7 @@ header .navbar-center ul li{
     display: inline-block;
     position: relative;
     margin-left: 40px;
+    transition: 1s;
 
 }
 header .lang ul li{
@@ -64,7 +71,7 @@ header .navbar-center ul li a::before{
     position: absolute;
     right: 0px;
     bottom: 0px;
-    top: 30px;
+    top: 54px;
     transition: all .5s ease;
 }
 header .navbar-center ul li a:hover:before{
@@ -96,103 +103,212 @@ header .navbar-center ul li a#active:before{
     width: 100%;
 }
 .row{
-    margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#cars .row .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#cars .row .container .box{
+    max-width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+#cars .row{
+    border-bottom:solid #CC9746 3px;
+
+}
+#cars .car_logo{
+    width: 70%;
+}
+#cars .arrow{
+    position: relative;
+    left: 60%;
+    bottom: 50px;
+    transform: translate(-10%,-10%);
+}
+#cars .arrow span{
+    display: block;
+    width:20px;
+    height: 20px;
+    border-bottom: 3px solid #CC9746;
+    border-right: 3px solid #CC9746;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(10px,10px);
+    }
 }
 
-#gallery .row{
-    height: 500px;
-}
 #gallery .row .container{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    margin-right: 120px;
-    margin-left: 120px;
+    margin-right: 100px;
+    margin-left: 100px;
     margin-top: 100px;
+    margin-bottom: 30px;
+    transition: 1s;
 }
-#gallery .row .container a{
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+#gallery .row .container .box{
+    width: 500px;
     padding-right: 15px;
     padding-left: 15px;
     text-align: center;
     transition: 0.5s;
-    width: 120px;
     min-height: 120px;
     max-height: auto;
+    text-decoration: none;
 }
-#gallery .row .container a p{
+#gallery .row .container .box a > .button-box{
+
     opacity: 1;
-    color: #F8F8F5;
     font-weight: 600;
     font-size: 120%;
     position: relative;
     top: -50%;
     transition: 0.5s;
 
+
 }
-#gallery .row .container a:hover{
+#gallery .row .container .box a:hover img{
     filter: grayscale(100%);
     cursor: pointer;
     transition: 0.5s;
+
 }
-#gallery .row .container a:hover p{
-    font-size: 130%;
-    text-decoration: underline;
+#gallery .row .container .box a:hover .button-box{
+    color: #CC9746;
     transition: 0.5s;
+    background: #1A1A1A;
+} 
+#gallery .row .container .box a{
+    color: #ffffff;
+    text-decoration: none;
 }
+
 #gallery{
     text-align: center;
 
 }
 #gallery .row .title{
     font-size: 30px;
-}
-#gallery .row .title{
-    font-size: 30px;
+    color: #ffffff;
 }
 #gallery .row .under-title{
     font-size: 20px;
     opacity: 50%;
+    color: #ffffff;
 }
-#gallery .row .container a .img{
+#gallery .row .container .box a .img{
     width: 100%;
     height: auto;
     filter: brightness(70%);
 }
-
-#about{
-    background: #F8F8F5;
-
+.button-box{
+    min-width: 210px;
+    height: 58px;
+    display: inline-flex;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    border-bottom:solid #CC9746 3px;
+    color: #ffffff;
+    border: solid 2px currentColor;
+    font-weight: bold;
+    transition: all 0.3s;
+    background: transparent;
+    cursor: pointer;
 }
+
+
 #home .main-box{
-    height: 500px;
+    height: 50vh;
     hyphens: manual;
-    background-image: url(/img/lambo2.jpg);
+    background-image: url(/img/luks3.jpg);
     background-size: cover;
     background-position: center;
     border-bottom:solid #CC9746 3px;
-    filter: drop-shadow(50%);
+    transition: 1s;
+}
+#home .main-box .desc{
+    padding-top: 150px;
+    filter: none;
+    position: relative;
+    color: #ffffff;
+    margin-left: 80px;
+    transition: 1s;
+
+}
+#home .main-box .desc .title{
+    font-family: "Lato", lato;
+    font-size: 57px;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: none;
+
+}
+#home .main-box .desc .under-title{
+    font-family: "Lato", lato;
+    font-size: 37px;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: none;
+    margin-left: 25px;
+}
+#about{
+    background-color: #373736;
+    text-align: center;
+    border-bottom:solid #CC9746 3px;
+    color: #ffffff;
 }
 #about .main-box .title{
     font-size: 30px;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 #about .main-box .content{
-
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
-#about .content{
-    height: 30vh;
 
+#about .content{
+
+
+}
+.decorator{
+    position: relative;
+    margin: auto;
+    height: 3px;
+    width: 300px;
+    background-color: #CC9746;
+    top: -15px;
 }
 #offer{
     text-align: center;
-
+    color: #ffffff;
 }
 #offer .row .title{
     font-size: 30px;
@@ -209,6 +325,8 @@ header .navbar-center ul li a#active:before{
     display: flex;
     margin-right: 120px;
     margin-left: 120px;
+    cursor: default;
+
 }
 #offer .row .container .box{
 
@@ -216,12 +334,12 @@ header .navbar-center ul li a#active:before{
     max-width: 33.33333%;
     padding-right: 15px;
     padding-left: 15px;
-
+    transition: 0.5s;
 }
 #offer .row .container .box .content{
-
-    border-radius: 10px;
-    background-color: #e9e9e9;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #373736;
     padding: 30px;
     margin-bottom: 30px;
     transition: 0.2s;
@@ -241,7 +359,9 @@ header .navbar-center ul li a#active:before{
     margin: 30px;
 }
 
-
+.bold{
+    font-weight: 700;
+}
 
 footer .info{
 
@@ -272,29 +392,67 @@ footer .img{
 footer .logo{
     height: 80px;
 }
-.map {
 
-}
 .map iframe{
     width: 100%;
 
 }
 footer .copyright{
+    color: #ffffff;
     height: 60px;
     text-align: center;
     line-height: 60px;
 }
 
 @media only screen and (max-width: 1000px){
+    #home .main-box .desc{
+        padding-top: 150px;
+        filter: none;
+        position: relative;
+        color: #ffffff;
+        margin: 0px;
+    
+    }
     #home .main-box{
         text-align: center;
         height: 500px;
-        background-image: url(/img/lambo3.jpg);
+        background-image: url(/img/luks4.jpg);
         background-size: cover;
         background-position: center;
     }
+    footer .img{
+        vertical-align: middle;
+        text-align: center;
+    }
+    footer .contact{
+
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+       
+    }
+    footer .info-column{
+        display: table-cell;
+        width: 100%;
+        line-height: 40px;
+        margin-bottom: 30px;
+        
+    }
+    footer .info{
+        height: 850px; 
+    };
 }
-@media (max-width: 1400px){
+@media (max-width: 1500px){
+    #cars .row .container{
+        flex-wrap: wrap;
+    }
+    header .header{
+        margin-left: 0;
+    }
+    header .header .logo{
+        margin-left: 20px;
+    }
     #offer .row .container .box{
         flex: 0 0 50%;
         max-width: 50%;
@@ -304,8 +462,36 @@ footer .copyright{
         margin-right: 50px;
         margin-left: 50px;
     }
+    .reserve .row .container{
+
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    #gallery .row .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #gallery .row .container .box{
+        width: 600px;
+    }
+    .offer .row .container .box  .logo_big{
+        display: none;
+    }
+    .offer .row .container .box{
+        flex: 100%;
+    }
+}
+@media (max-width: 1330px){
+    header .navbar-center ul li{
+        margin-left: 20px;
+        transition: 1s;
+    }
 }
 @media (max-width: 900px){
+    #cars .row .container .box{
+        width: 80px;
+
+    }
     #offer .row .container .box{
         flex: 0 0 100%;
         max-width: 200%;
@@ -324,8 +510,63 @@ footer .copyright{
         margin-right: 10px;
     }
     #gallery .row{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #gallery .row .container{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    #gallery .row .container .box{
+        width: 600px;
+    }
+    #home .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #gallery .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .reserve .row{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer .copyright{
+        font-size: 15px;
+    };
+    .actual .row{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 500px){
+    #cars{
+        display: none;
+        transition: 1s;
+    }
+    #home .main-box .desc{
+        color: #000000;
+        padding-top: 550px;
+        margin: 0px;
+        transition: 1s;
+    }
+    #gallery .row .title{
+        margin-top: 550px;
+    }
+    #about .main-box .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 400px){
+    #home .main-box{
+        height: 200px;
+    }
+    #home .main-box .desc{
+        color: #000000;
+        padding-top: 220px;
+        transition: 1s;
     }
 }
 .box:hover .content{
