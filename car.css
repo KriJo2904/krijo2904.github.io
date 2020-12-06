@@ -7,6 +7,41 @@
     font-size: 35px;
     color: #ffffff;
 }
+.car .row .container{
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    text-align: center;
+}
+.car .row .box {
+    flex: 1;
+
+}
+.car .row .box p{
+    margin-bottom: 20px;
+}
+.car .row .img{
+    margin-right: 50px;
+    transition: 1s;
+    width: 100%;
+}
+.car .row .img img{
+    width: 100%;
+    padding-top: 40px;
+    left: 50%;
+
+}
+.car .row .text {
+    padding-top: 20px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.car .row .text .title{
+    color: #CC9746;
+}
+
+
+
 .decorator{
     position: relative;
     margin: auto;
@@ -17,10 +52,6 @@
 .container{
     margin-top: 85px;
     margin-bottom: 50px;
-}
-.prize .row{
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 .prize .content table{

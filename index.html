@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" >
-    <link rel="icon" href="/icons/carvia_icon.ico">
+    <link rel="stylesheet" type="text/css" href="responsive.css" >
+    <link rel="icon" href="icons/carvia_icon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <title>Carivia - Wypożyczalnia luksusowych samochodów</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="navbar-left">
-                <img class="logo" src="/img/carvia_logo_hazel.png" href="/"/>
+                <img class="logo" src="img/carvia_logo_hazel.png" href="/"/>
             </div>
             <div class="navbar-center menu">
+            <input type="checkbox" id="checkbox">
+            <nav>
                 <ul>
                     <li>|</li>
                     <li><a class="link" id="active" href="/" a>O Nas</a></li>
@@ -29,7 +33,12 @@
                     <li><a class="link"  href="kontakt.html">Kontakt</a></li>
                     <li>|</li>
                 </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
             </div>
+
             <div class="navbar-center lang">
                 <ul>
                     <li><a class="link" id="active" href="/">PL</a></li>
@@ -41,6 +50,7 @@
     </header>
     <section id="home">
         <div class="main-box">
+            <img class="logo" src="img/carvia_logo_hazel.png" href="/"/>
             <div class="desc">
                 <div class="title">
                     Miejsce, w którym pasja spotyka się z luksusem
@@ -55,23 +65,23 @@
         <div class="row">
             <div class="container">
                 <div class="box">
-                    <img class="car_logo"src="/img/logos/lambo.png"/>
+                    <img class="car_logo"src="img/logos/lambo.png"/>
                 </div>
                 <div class="box">
     
-                    <img class="car_logo"src="/img/logos/audi.png"/>
+                    <img class="car_logo"src="img/logos/audi.png"/>
                 </div>
                 <div class="box">
-                    <img class="car_logo"src="/img/logos/merc.png"/>
+                    <img class="car_logo"src="img/logos/merc.png"/>
                 </div>
                 <div class="box">
-                    <img class="car_logo"src="/img/logos/chew.png"/>
+                    <img class="car_logo"src="img/logos/chew.png"/>
                 </div>
                 <div class="box">
-                    <img class="car_logo"src="/img/logos/bmw.png"/>
+                    <img class="car_logo"src="img/logos/bmw.png"/>
                 </div>
                 <div class="box">
-                    <img class="car_logo"src="/img/logos/porsche.png"/>
+                    <img class="car_logo"src="img/logos/porsche.png"/>
                 </div>
             </div>
         </div>
@@ -240,9 +250,9 @@
                 </div>
                 <div class="info-column">
                         <p><strong>Dane kontaktowe</strong></p>
-                        <p>+48 435 243 523</p>
-                        <p>+48 234 431 243</p>
-                        <p>carvia@wynajem.pl</p>
+                        <a href="tel:+48 513 513 978"><p>+48 435 243 523</p></a>
+                        <a href="tel:+48 513 513 978"><p>+48 234 431 243</p></a>
+                        <a href="mailto:carvia@wynajem.pl"><p>carvia@wynajem.pl</p></a>
                 </div>
                 <div class="info-column">
                         <p><strong>Dane adresowe</strong></p>
@@ -252,6 +262,11 @@
                 <div class="info-column">
                         <p><strong>Godziny otwarcia</strong></p>
                         <p>Pon-Pt <span>9:00 - 17:00</span></p>
+                        <a href="https://www.facebook.com/"><img class="social" src="/img/FACEBO~1.PNG" title="Carvia"/></a>
+                        <a href="https://www.instagram.com/"><img class="social" src="/img/INSTAG~1.PNG" title="Carvia"/></a>
+                        <a href="https://twitter.com/"><img class="social" src="/img/TWITTE~1.PNG" title="Carvia"/></a>
+                        <a href="https://www.youtube.com/"><img class="social" src="/img/YOUTUB~1.PNG" title="Carvia"/></a>
+
                 </div>
             </div>
         </div>

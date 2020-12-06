@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" >
     <link rel="stylesheet" type="text/css" href="contact.css" >
+    <link rel="stylesheet" type="text/css" href="responsive.css" >
     <link rel="icon" href="icons/carvia_icon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <title>Carivia - Wypożyczalnia luksusowych samochodów</title>
 </head>
 <body>
@@ -15,6 +17,8 @@
                 <img class="logo" src="img/carvia_logo_hazel.png" href="/"/>
             </div>
             <div class="navbar-center menu">
+            <input type="checkbox" id="checkbox">
+            <nav>
                 <ul>
                     <li>|</li>
                     <li><a class="link"  href="/" a>O Nas</a></li>
@@ -23,14 +27,19 @@
                     <li>|</li>
                     <li><a class="link"  href="samochody.html">Flota</a></li>
                     <li>|</li>
-                    <li><a class="link"  href="aktualnosci.html">Aktualności</a></li>
+                    <li><a class="link" href="aktualnosci.html">Aktualności</a></li>
                     <li>|</li>
                     <li><a class="link"  href="zarezerwuj.html">Zarezerwuj</a></li>
                     <li>|</li>
-                    <li><a class="link"  id="active" href="kontakt.html">Kontakt</a></li>
+                    <li><a class="link" id="active" href="kontakt.html">Kontakt</a></li>
                     <li>|</li>
                 </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
             </div>
+
             <div class="navbar-center lang">
                 <ul>
                     <li><a class="link" id="active" href="/">PL</a></li>
@@ -106,19 +115,16 @@
     </section>
     <section id="about">
         <footer>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.868662623907!2d17.93107456594958!3d50.66669902963998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5e78e0159602011!2sPubliczne%20Technikum%20Nr%205%20Opole!5e0!3m2!1spl!2spl!4v1606207274526!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
             <div class="info">
                 <div class="contact">
                     <div class="info-column img">
-                            <img class="logo" src="/img/carvia_logo_hazel.png" href="/"/>
+                            <img class="logo" src="img/carvia_logo_hazel.png" href="/"/>
                     </div>
                     <div class="info-column">
                             <p><strong>Dane kontaktowe</strong></p>
-                            <p>+48 435 243 523</p>
-                            <p>+48 234 431 243</p>
-                            <p>carvia@wynajem.pl</p>
+                            <a href="tel:+48 513 513 978"><p>+48 435 243 523</p></a>
+                            <a href="tel:+48 513 513 978"><p>+48 234 431 243</p></a>
+                            <a href="mailto:carvia@wynajem.pl"><p>carvia@wynajem.pl</p></a>
                     </div>
                     <div class="info-column">
                             <p><strong>Dane adresowe</strong></p>
@@ -128,10 +134,17 @@
                     <div class="info-column">
                             <p><strong>Godziny otwarcia</strong></p>
                             <p>Pon-Pt <span>9:00 - 17:00</span></p>
+                            <a href="https://www.facebook.com/"><img class="social" src="/img/FACEBO~1.PNG" title="Carvia"/></a>
+                            <a href="https://www.instagram.com/"><img class="social" src="/img/INSTAG~1.PNG" title="Carvia"/></a>
+                            <a href="https://twitter.com/"><img class="social" src="/img/TWITTE~1.PNG" title="Carvia"/></a>
+                            <a href="https://www.youtube.com/"><img class="social" src="/img/YOUTUB~1.PNG" title="Carvia"/></a>
+    
                     </div>
                 </div>
             </div>
-
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.868662623907!2d17.93107456594958!3d50.66669902963998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5e78e0159602011!2sPubliczne%20Technikum%20Nr%205%20Opole!5e0!3m2!1spl!2spl!4v1606207274526!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             <div class="copyright">
                 &copy CARVIA - Wypożyczalnia samochodów premium - 2020
             </div>

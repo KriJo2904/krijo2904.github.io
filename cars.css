@@ -53,7 +53,7 @@ html{
     width: 485px;
     float: left;
     padding-right: 15px;
-    padding-left: 15px;,
+    padding-left: 15px;
 
 
 }
@@ -87,11 +87,12 @@ html{
 }
 
 }
-img{
+.cars .row .container img{
     vertical-align: top;
     max-width: 100%;
     height: auto;
 }
+
 .button{
     position: relative;
     background-color:  #CC9746;
@@ -103,10 +104,16 @@ img{
     border-bottom-right-radius: 5px;
     cursor: pointer;
     color: #373736;
+    text-decoration: none;
+    
 }
-.button:hover{
+.button:hover label{
     font-size: 21px;
     text-decoration: underline;
+
+}
+.button:visited label{
+    text-decoration: none;
 
 }
 .cars{
