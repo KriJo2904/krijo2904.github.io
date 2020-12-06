@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css" >
+    <link rel="stylesheet" type="text/css" href="../reserv.css" >
+    <link rel="stylesheet" type="text/css" href="../responsive.css" >
+    <link rel="icon" href="../icons/carvia_icon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+    <title>Carivia - Wypożyczalnia luksusowych samochodów</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="navbar-left">
+                <img class="logo" src="../img/carvia_logo_hazel.png" href="/en/"/>
+            </div>
+            <div class="navbar-center menu">
+            <input type="checkbox" id="checkbox">
+            <nav>
+                <ul>
+                    <li>|</li>
+                    <li><a class="link"  href="/en/" a>Home</a></li>
+                    <li>|</li>
+                    <li><a class="link"  href="offer.html" a>Offer</a></li>
+                    <li>|</li>
+                    <li><a class="link"  href="cars.html">Cars</a></li>
+                    <li>|</li>
+                    <li><a class="link"  href="actual.html">News</a></li>
+                    <li>|</li>
+                    <li><a class="link" id="active" href="reserve.html">Reserve</a></li>
+                    <li>|</li>
+                    <li><a class="link"  href="contact.html">Contact</a></li>
+                    <li>|</li>
+                </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
+            </div>
+
+            <div class="navbar-center lang">
+                <ul>
+                    <li><a class="link"  href="/">PL</a></li>
+                    <li>|</li>
+                    <li><a class="link" id="active" href="en/">EN</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="row">
+            <div class="title">
+                <h1>Reserve</h1>
+            </div>
+            <div class="decorator">
+            </div>
+        </div>     
+    </section>
+    <section class="reserve">
+        <form class="boxer">
+        <div class="row">
+            <div class="title">
+                <h1>Please enter your contact details</h1>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="container">
+                <div class="box">
+                    <label> Email (required)<br>
+                    <input type="email" name="email" value="" class="form text" required="true">
+                    </label>
+                </div>
+                <div class="box">
+                <label> Full Name (required)<br>
+                    <input type="text" name="name" value="" class="form text" required="true">
+                    </label>
+                </div>
+                <div class="box">
+                <label> Reception venue (required)<br>
+                    <input type="text" name="first_place" value="" class="form text" required="true">
+                    </label>
+                </div>
+                <div class="box">
+                <label> Place of Return (required)<br>
+                    <input type="text" name="sec_place" value="" class="form text" required="true">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title">
+                <h1>Choose an car</h1>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="container">
+                <div class="box wider">
+                <label>Choose an car<br>
+                <select id="cars" class="form select" >
+                  <option value="Lamborghini Huracan Performante">Lamborghini Huracan Performante</option>
+                  <option value="Porsche 911 Carrera 4">Porsche 911 Carrera 4</option>
+                  <option value="Chevrolet Camaro ZL1 720 HP">Chevrolet Camaro ZL1 720 HP</option>
+                  <option value="Mercedes S-klasa AMG S400d">Mercedes S-klasa AMG S400d</option>
+                  <option value="BMW G11 730d xDrive M-Pakiet">BMW G11 730d xDrive M-Pakiet</option>
+                  <option value="Porsche Panamera 4S 2018">Porsche Panamera 4S 2018</option>
+                  <option value="Audi A7 S-line">Audi A7 S-line</option>
+                  <option value="BMW M2 Competition">BMW M2 Competition</option>
+                  <option value="Mercedes E220d AMG 2018">Mercedes E220d AMG 2018</option>
+                </select></label>
+                </div>
+                <div class="box">
+                <label>Rent From<br>
+                    <input type="date" name="first_date" value="" class="form select">
+                    </label>
+                </div>
+                <div class="box">
+                <label>Rent until<br>
+                    <input type="date" name="sec_date" value="" class="form select">
+                    </label>
+                </div>
+                <div class="box wider">
+                <label>Message to the rental company<br>
+                    <textarea name="textarea" name="msg" cols="30" rows="10" class="form msg"></textarea>
+                    </label>
+                </div>
+                <div class="box submit">
+                <div class="title">
+                    <h1>Everything is ready!</h1>
+                </div><br>
+                    <button type="submit" class="btn select">Send!</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </section>
+    <footer>
+        <div class="info">
+            <div class="contact">
+                <div class="info-column img">
+                        <img class="logo" src="../img/carvia_logo_hazel.png" href="/"/>
+                </div>
+                <div class="info-column">
+                        <p><strong>Contact</strong></p>
+                        <a href="tel:+48 513 513 978"><p>+48 435 243 523</p></a>
+                        <a href="tel:+48 513 513 978"><p>+48 234 431 243</p></a>
+                        <a href="mailto:carvia@wynajem.pl"><p>carvia@wynajem.pl</p></a>
+                </div>
+                <div class="info-column">
+                        <p><strong>Addres</strong></p>
+                        <p>ul. Kościuszki 120</p>
+                        <p>46-070 Opole</p>
+                </div>
+                <div class="info-column">
+                        <p><strong>Opening hours</strong></p>
+                        <p>Mon - Fri <span>9:00 - 17:00</span></p>
+                        <a href="https://www.facebook.com/"><img class="social" src="../img/FACEBO~1.PNG" title="Carvia"/></a>
+                        <a href="https://www.instagram.com/"><img class="social" src="../img/INSTAG~1.PNG" title="Carvia"/></a>
+                        <a href="https://twitter.com/"><img class="social" src="../img/TWITTE~1.PNG" title="Carvia"/></a>
+                        <a href="https://www.youtube.com/"><img class="social" src="../img/YOUTUB~1.PNG" title="Carvia"/></a>
+
+                </div>
+            </div>
+        </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.868662623907!2d17.93107456594958!3d50.66669902963998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5e78e0159602011!2sPubliczne%20Technikum%20Nr%205%20Opole!5e0!3m2!1spl!2spl!4v1606207274526!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        <div class="copyright">
+            &copy CARVIA - Wypożyczalnia samochodów premium - 2020
+        </div>
+    </footer>
+</body>
+</html>
