@@ -150,19 +150,6 @@ header .navbar-center ul li a#active:before{
 .arrow span:nth-child(3){
     animation-delay: -0.4s;
 }
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-10px,-10px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(10px,10px);
-    }
-}
 
 #gallery .row .container{
     flex-wrap: wrap;
@@ -260,7 +247,7 @@ header .navbar-center ul li a#active:before{
 
 }
 #home .main-box .desc{
-    padding-top: 150px;
+    padding-top: 8%;
     filter: none;
     position: relative;
     color: #ffffff;
@@ -300,10 +287,6 @@ header .navbar-center ul li a#active:before{
     margin-right: 20px;
 }
 
-#about .content{
-
-
-}
 .decorator{
     position: relative;
     margin: auto;
@@ -430,4 +413,17 @@ footer a{
 ::selection {
     background-color: #fab700;
     color: #fff;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(10px,10px);
+    }
 }

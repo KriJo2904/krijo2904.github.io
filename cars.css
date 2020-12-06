@@ -1,4 +1,5 @@
 @media only screen {
+
 html{
     hyphens: manual;
 }
@@ -10,7 +11,7 @@ html{
 }
 #home .row .title{
     font-size: 35px;
-    color: #aca9a9;
+    color: #ffffff;
 }
 #home .decorator{
     position: relative;
@@ -71,7 +72,13 @@ html{
 
     font-size: 15px;
 }
+.cars .row .container .box .content a{
+
+    text-decoration: none;
+
+}
 .cars .row .container .box .content .table td{
+    width: 50%;
     padding-top: 15px;
     text-align: left;
     line-height: 30px;
@@ -104,8 +111,11 @@ html{
     border-bottom-right-radius: 5px;
     cursor: pointer;
     color: #373736;
-    text-decoration: none;
-    
+
+}
+.button label{
+cursor: pointer;
+
 }
 .button:hover label{
     font-size: 21px;
@@ -114,7 +124,6 @@ html{
 }
 .button:visited label{
     text-decoration: none;
-
 }
 .cars{
     border-bottom: #CC9746 solid 3px;
